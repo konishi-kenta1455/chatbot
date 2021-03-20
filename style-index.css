@@ -1,0 +1,125 @@
+/* チャットで相談するの設定 */
+.btn {
+  position: fixed;
+  font-weight: bold;
+  padding: 0.25em 0.5em;
+  text-decoration: none;
+  color: #000000;
+  background: #e24fbd;
+  border-radius: 0 15px 15px 0;
+  transition: .4s;
+  right: 50px;
+  bottom: 50px;
+}
+.btn:hover {
+  background: #ec8c33;
+  cursor: pointer;
+}
+/* ドロップダウンで開く部分 */
+.dropdown-area{
+position: fixed;
+background-color: #000000;
+color: rgb(255, 255, 255);
+height: 500px;
+width: 350px;
+right: 10px;
+bottom: 85px;
+}
+/* タイトル設定 */
+.title-area{
+position: fixed;
+background-color: #911051fd;
+color:aliceblue;
+width: 350px;
+text-align: center;
+}
+/* メッセージが表示される部分 */
+.message-area{
+position: absolute;
+background-color:#7aeef1b2;
+width: 340px;
+height: 430px;
+top: 30px;
+left: 5px;
+overflow-y: scroll;
+overflow-x: hidden;
+}
+/* ボット画像 */
+.img{
+  position: relative;
+  top: 10px;
+  left: 7px;
+}
+/* ボット設定 */
+.robot{
+  position: relative;
+  left: 80px;
+  transform: translatey(-30px);
+  max-width: fit-content;
+  font-size: small;
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 5px;
+  padding: 3px;
+}
+.robot:after{
+  position:absolute;
+  border-right: 20px solid #ffffff;
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  top: 7px;
+  left: -18px;
+  content: "";
+
+}
+/* user設定 */
+.me{
+  position: relative;
+  left: 170px;
+  max-width :110px;
+  font-size: small;
+  background-color: #30e657;
+  color: #000000;
+  border-radius: 5px;
+  padding: 3px;
+}
+.me:after{
+  position:absolute;
+  border-left: 20px solid #30e657;
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  top: 7px;
+  right: -15px;
+  content: "";
+
+}
+
+/* テキスト、送信ボタン */
+.send-area{
+position:absolute;
+background-color:#911051fd;
+top: 470px;
+left: 5px;
+width: 340px;
+text-align : center ;
+}
+
+.btn2{
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+  border-radius : 10%;
+}
+.btn2:hover {
+  box-shadow    : none;        /* カーソル時の影消去 */
+  color         : #000000;     /* 背景色     */
+  background    : #ec529f;     /* 文字色     */
+}
+
+.inp-text {
+  border        : #ffffff;
+  border-radius : 4px;
+}
+.inp-text:focus{
+border-color  : #b2fcf8;                 /* 枠線色     */
+background    : #b2fcf8;  /* 背景色     */
+}
